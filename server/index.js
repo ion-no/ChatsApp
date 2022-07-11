@@ -9,5 +9,5 @@ const path = require('path')
 
 io.on('connection', socketManage )
 // In dev mode just hide hide app.uss(... ) below
-//app.use( express.static(path.join(__dirname, '../build')))
+app.use( express.static(path.join(__dirname, '../build')))
 server.listen( PORT, () => console.log('Server runnin @ ' + PORT ))
