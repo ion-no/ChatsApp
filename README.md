@@ -2,6 +2,8 @@
 
 The project is an attempt to mimic the Discord App
 
+Deployed @ https://chatsapp-135.herokuapp.com
+
 ## Getting Started
 
 for localhost
