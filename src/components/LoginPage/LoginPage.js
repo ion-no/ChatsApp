@@ -34,26 +34,26 @@ export class LoginPage extends Component {
   render() {
     return (
       <Grid
-        style={{ height: '100vh', padding: '0px', margin: '0px' }}
+        style={{backgroundColor: '#4F016D',height: '100vh', padding: '0px', margin: '0px' }}
         textAlign='center'
         verticalAlign='middle'
       >
         <Grid.Column computer={ 6 } tablet={ 8 } mobile={ 14 } >
-          <Header as='h2' icon textAlign='center' color='blue'>
-            <Icon name='discussions' />
-            Simple Chats.
+          <Header as='h2' icon textAlign='center' inverted>
+            <Icon name='discord' />
+            ChatsApp
           </Header>
-          <Form size='small' onSubmit={this.handleSubmit}>
+          <Form size='large' onSubmit={this.handleSubmit}>
             <Form.Input 
               name='nickname'
               type='text'
               placeholder='Username'
               onChange={this.handleChange}
               autoFocus
-              icon={<Icon name='add user' link circular inverted onClick={ this.handleSubmit } />}
+              icon={<Icon name='add user' link circular inverted color='purple' onClick={ this.handleSubmit } />}
             />
             { this.state.error && (
-              <Message negative>{ this.state.error }</Message>
+              <Message color='red'>{ this.state.error }</Message>
             )}
           </Form>
         </Grid.Column>

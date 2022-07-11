@@ -126,8 +126,8 @@ export class ChatPage extends Component {
     let { user, users, pChats, logout, socket } = this.props
     let { activeChannel, chats } = this.state
     return (
-      <Grid style={{ height: '100vh', margin: '0px'}}>
-        <Grid.Column computer={4} tablet={ 4 } mobile={6} style={{ background: '#4c3c4c', height: '100%'}}>
+      <Grid style={{ height: '100vh', margin: '0px', background: '#eee'}}>
+        <Grid.Column computer={4} tablet={ 4 } mobile={6} style={{ background: '#4F016D', height: '100%'}}>
           <Sidebar
             user = { user }
             users = { users }

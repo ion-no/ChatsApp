@@ -31,7 +31,7 @@ export class MessageInput extends Component {
             onFocus = {this.handleOnFocused}
             onBlur = {this.handleOnBlur}
             icon={<Icon 
-              name='send' 
+              name='send' color='purple' 
               link 
               circular 
               inverted 

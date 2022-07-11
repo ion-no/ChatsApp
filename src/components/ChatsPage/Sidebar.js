@@ -91,7 +91,7 @@ export class Sidebar extends Component {
     return (
       <React.Fragment>
         <Menu
-          style={{ background: '#4c3c4c', paddingTop: '2em' }}
+          style={{ background: '#4F016D', paddingTop: '2em' }}
           vertical
           inverted
           fluid
@@ -100,16 +100,14 @@ export class Sidebar extends Component {
         >
 
           <Header inverted as='h3'>
-            <Icon name='chat' />
-            <Header.Content> Simple Chat </Header.Content>
-            <Header.Subheader>
-              Login as : {user.nickname[0].toUpperCase() + user.nickname.slice(1)}
-            </Header.Subheader>
+            <Icon name='discord' size='massive' />
+            <Header.Content style={{ fontSize: '2em' }}>ChatsApp</Header.Content>
           </Header>
+          <br />
           <Menu.Menu>
             <Menu.Item style={{ paddingLeft: '0' }}>
-              <span style={{ fontSize: '1.2em' }}>
-                <Icon name='bullhorn' /> Channel lists
+              <span style={{ fontSize: '1.3em' }}>
+                <Icon name='list' /> Channel lists
               </span>
               <Icon name='add' onClick={this.openModal} />
             </Menu.Item>
@@ -118,13 +116,13 @@ export class Sidebar extends Component {
           <br />
           <Menu.Menu>
             <Menu.Item style={{ paddingLeft: '0' }}>
-              <span style={{ fontSize: '1.2em' }}>
+              <span style={{ fontSize: '1.3em' }}>
                 <Icon name='address book' /> Online Users
               </span>
             </Menu.Item>
             {(users && chats[0]) && this.displayUsers(users)}
           </Menu.Menu>
-          <br />
+          <br /><br /><br /><br /><br />
           <Menu.Menu>
             <Menu.Item style={{ paddingLeft: '0' }}>
               <Button

@@ -5,12 +5,12 @@ export class MessageHeader extends Component {
   render() {
     let { activeChannel } = this.props
     return (
-      <Segment>
-        <Header as="h2">
-          <Icon name="bullhorn" />
-          <Header.Content>{ activeChannel.name[0].toUpperCase() + activeChannel.name.slice(1) }</Header.Content>
-          <Header.Subheader>
-            Description : <span>{activeChannel.description[0].toUpperCase() + activeChannel.description.slice(1)}</span>
+      <Segment style={{ background: '#4F016D'}}>
+        <Header as="h2" style={{ color: '#eee'}}>
+          <Icon name='chat' inverted />
+          <Header.Content style={{ color: '#eee'}}>{ activeChannel.name[0].toUpperCase() + activeChannel.name.slice(1) }</Header.Content>
+          <Header.Subheader style={{ color: '#eee'}}>
+            About : <span>{activeChannel.description[0].toUpperCase() + activeChannel.description.slice(1)}</span>
           </Header.Subheader>
         </Header>
       </Segment>
