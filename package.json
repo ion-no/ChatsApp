@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.16.4",
+    "express-handlebars": "^6.0.6",
     "moment": "^2.24.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -17,7 +18,7 @@
     "start": "node server/index.js",
     "react": "react-scripts start",
     "server": "nodemon server/index.js",
-    "online": "node server/index.js", 
+    "online": "node server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

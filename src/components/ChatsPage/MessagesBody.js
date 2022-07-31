@@ -31,7 +31,7 @@ export class MessagesBody extends Component {
                       style={{ padding: '3px 10px' }} 
                       textAlign={ message.sender === user.nickname ? 'right' : 'left' }>
                       <h3>{message.message}</h3>
-                      {message.sender[0].toUpperCase() + message.sender.slice(1)} Send @ { moment(message.timef).fromNow()}
+                      {message.sender[0].toUpperCase() + message.sender.slice(1)} @ { moment(message.timef)}
                     </Card.Content>
                   </Card>
                 ))
